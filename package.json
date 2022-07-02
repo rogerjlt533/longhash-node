@@ -1,6 +1,6 @@
 {
   "name": "longhash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "长文本加密/解密",
   "main": "index.js",
   "scripts": {

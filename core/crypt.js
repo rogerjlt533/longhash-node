@@ -5,10 +5,10 @@ exports.filterSerial = function (serials) {
         return {count: 0, serials: []}
     }
     if (serials.length === 1) {
-        if (serials[0] === 8) {
-            serials.push(1)
+        if (serials[0] === 7) {
+            serials.push(0)
         } else {
-            serials.push(8)
+            serials.push(7)
         }
     }
     return {count: serials.length, serials}
@@ -19,10 +19,11 @@ exports.convert = function (value, serials) {
     if (result.count === 0) {
         return value
     }
+    console.log(result)
     let values = value.split('')
     for (let index = 0; index < result.serials.length - 1; index ++) {
-        const from = result.serials[index] - 1
-        const dest = result.serials[index + 1] - 1
+        const from = result.serials[index]
+        const dest = result.serials[index + 1]
         const temp = values[from]
         values[from] = values[dest]
         values[dest] = temp

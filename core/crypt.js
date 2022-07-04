@@ -19,7 +19,6 @@ exports.convert = function (value, serials) {
     if (result.count === 0) {
         return value
     }
-    console.log(result)
     let values = value.split('')
     for (let index = 0; index < result.serials.length - 1; index ++) {
         const from = result.serials[index]

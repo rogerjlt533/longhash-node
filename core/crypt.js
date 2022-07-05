@@ -54,5 +54,4 @@ exports.decode = function (content, serials = []) {
         content = content.substr(8)
     }
     return values.join('')
-
 }

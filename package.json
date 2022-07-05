@@ -1,16 +1,15 @@
 {
   "name": "longhash",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "长文本加密/解密",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "hash", "long text"
+    "hash",
+    "long text"
   ],
   "author": "chaox",
   "license": "MIT"
 }
-
-

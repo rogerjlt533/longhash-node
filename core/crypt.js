@@ -23,10 +23,10 @@ exports.convert = function (value, serials) {
     for (let index = 0; index < result.serials.length - 1; index ++) {
         const from = result.serials[index]
         const dest = result.serials[index + 1]
-        const temp = values[from]
+        let temp = values[from]
         values[from] = values[dest]
         values[dest] = temp
-        delete temp
+        temp = null
     }
     return values.join('')
 }

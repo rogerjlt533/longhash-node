@@ -12,6 +12,6 @@ const longhash = require('longhash')
 
 const content = 'test'
 
-longhash.encode('longhash', content)
+const encodeText = longhash.encode('longhash', content)
 
-longhash.decode('longhash', content)
+const decodeText = longhash.decode('longhash', encodeText)
